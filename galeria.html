@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria — ATV Arena | Demo</title>
+  <meta name="description" content="Galeria maszyn ATV Arena — system podglądu maszyn. Wersja demonstracyjna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;1,700;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== PASEK DEMO + ACCENT SWITCHER ====== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="mono topbar__note">Wersja demonstracyjna // atv-arena.pl // v1.0</span>
+      <div class="topbar__accents">
+        <span class="mono">Akcent:</span>
+        <button class="accent-btn" type="button" data-accent="red" aria-pressed="true">A — RED</button>
+        <button class="accent-btn" type="button" data-accent="lime" aria-pressed="false">B — LIME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+      <nav class="site-nav" id="siteNav" aria-label="Nawigacja główna">
+        <a href="index.html">Start</a>
+        <a href="motocykle.html">Motocykle</a>
+        <a href="atv.html">ATV</a>
+        <a href="ssv.html">SSV</a>
+        <a href="galeria.html" class="is-active">Galeria</a>
+        <a href="index.html#cennik">Cennik</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="site-header__phone" href="tel:+48532000000">+48 532 000 000</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== SYSTEM PODGLĄDU MASZYN ====== -->
+    <section id="viewer">
+      <div class="container">
+
+        <div class="viewer-topbar">
+          <span class="viewer-topbar__title">Galeria // System podglądu maszyn</span>
+          <div class="viewer-topbar__nav">
+            <span class="viewer-counter">Jednostka <b id="viewerCurrent">01</b> / <b id="viewerTotal">08</b></span>
+            <button class="viewer-btn" type="button" id="btnPrev">◀ Poprz.</button>
+            <button class="viewer-btn" type="button" id="btnNext">Nast. ▶</button>
+          </div>
+        </div>
+
+        <div class="viewer-grid">
+
+          <!-- Scena -->
+          <div class="ph ph--cam viewer-stage">
+            <span class="ph__corner-info" id="stageId">ID: AA-001 // CAM-01</span>
+            <span class="ph__year" id="stageYear">2026 · ATV</span>
+            <span class="ph__label" id="stagePhoto">[ ZDJĘCIE: AA STORM 250 ]</span>
+            <span class="display viewer-stage__name" id="stageName">AA Storm 250</span>
+            <span class="viewer-stage__status"><span id="stageStatus">Dostępny</span></span>
+          </div>
+
+          <!-- Panel specyfikacji -->
+          <aside class="spec-panel">
+            <div class="spec-panel__head">
+              <span class="mono" id="specId">Specyfikacja // AA-001</span>
+              <span class="mono">Demo-data</span>
+            </div>
+
+            <div class="spec-row"><span class="mono">Model</span><b id="specModel">AA STORM 250</b></div>
+            <div class="spec-row"><span class="mono">Silnik</span><b id="specEngine">250 ccm / 4T</b></div>
+            <div class="spec-row"><span class="mono">Rocznik</span><b id="specYear">2026</b></div>
+            <div class="spec-row"><span class="mono">Kategoria</span><b class="accent-text" id="specCat">ATV</b></div>
+
+            <div class="spec-bars">
+              <div class="spec-bar">
+                <div class="spec-bar__head"><span class="mono">Moc</span><b id="valPower">17 KM</b></div>
+                <div class="spec-bar__track"><div class="spec-bar__fill" id="barPower"></div></div>
+              </div>
+              <div class="spec-bar">
+                <div class="spec-bar__head"><span class="mono">Moment obr.</span><b id="valTorque">18 Nm</b></div>
+                <div class="spec-bar__track"><div class="spec-bar__fill" id="barTorque"></div></div>
+              </div>
+              <div class="spec-bar">
+                <div class="spec-bar__head"><span class="mono">Masa</span><b id="valWeight">168 kg</b></div>
+                <div class="spec-bar__track"><div class="spec-bar__fill" id="barWeight"></div></div>
+              </div>
+            </div>
+
+            <p class="spec-panel__desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <a class="btn btn--accent btn--block" href="index.html#kontakt"><span>Zapytaj o tę maszynę</span></a>
+          </aside>
+        </div>
+
+        <!-- Miniatury (renderowane przez support.js) -->
+        <div class="thumbs" id="thumbs"></div>
+
+      </div>
+    </section>
+
+    <!-- ====== BROKEN GRID / Z PADOKU ====== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">// Archiwum</p>
+            <h2 class="display">Z padoku i z trasy</h2>
+          </div>
+          <span class="mono">Układ asymetryczny &middot; miejsca na zdjęcia klienta</span>
+        </div>
+
+        <div class="broken-grid">
+          <div class="bg-item bg-item--a reveal">
+            <div class="ph ph--cam" style="height: 100%;"><span class="ph__label">[ Foto 01: Skok — cross ]</span></div>
+            <span class="mono">IMG-01 // 4000×2600</span>
+          </div>
+          <div class="bg-item bg-item--b reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 02: Pion ]</span></div>
+            <span class="mono">IMG-02</span>
+          </div>
+          <div class="bg-item bg-item--c bg-item--shift reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 03 ]</span></div>
+            <span class="mono">IMG-03</span>
+          </div>
+          <div class="bg-item bg-item--c reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 04 ]</span></div>
+            <span class="mono">IMG-04</span>
+          </div>
+          <div class="bg-item bg-item--wide reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 05: Panorama toru ]</span></div>
+            <span class="mono">IMG-05 // WIDE</span>
+          </div>
+          <div class="bg-item bg-item--quote reveal">
+            Błoto.<br>Kurz.<br>Adrenalina.
+          </div>
+          <div class="bg-item bg-item--c bg-item--shift reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 06 ]</span></div>
+            <span class="mono">IMG-06</span>
+          </div>
+          <div class="bg-item bg-item--wide reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 07: Serwis — detal ]</span></div>
+            <span class="mono">IMG-07 // WIDE</span>
+          </div>
+          <div class="bg-item bg-item--b reveal">
+            <div class="ph" style="height: 100%;"><span class="ph__label">[ Foto 08: Pion ]</span></div>
+            <span class="mono">IMG-08</span>
+          </div>
+          <div class="bg-item bg-item--wide bg-item--shift reveal">
+            <div class="ph ph--cam" style="height: 100%;"><span class="ph__label">[ Foto 09: Klient + maszyna ]</span></div>
+            <span class="mono">IMG-09</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== STOPKA ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+          <p class="site-footer__blurb">
+            Lorem ipsum dolor sit amet — sprzedaż, serwis i finansowanie quadów,
+            motocykli i pojazdów SSV.
+          </p>
+        </div>
+        <nav aria-label="Stopka">
+          <a href="index.html">Start</a>
+          <a href="motocykle.html">Motocykle</a>
+          <a href="atv.html">ATV</a>
+          <a href="ssv.html">SSV</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="index.html#cennik">Cennik</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom mono">
+        <span>© 2026 ATV Arena — wersja demonstracyjna</span>
+        <span>Projekt: Demo // v1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>

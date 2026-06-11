@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATV Arena — Quady, Motocykle, SSV | Demo</title>
+  <meta name="description" content="ATV Arena — import bezpośredni quadów, motocykli i pojazdów SSV. Wersja demonstracyjna strony.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;1,700;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== PASEK DEMO + ACCENT SWITCHER ====== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="mono topbar__note">Wersja demonstracyjna // atv-arena.pl // v1.0</span>
+      <div class="topbar__accents">
+        <span class="mono">Akcent:</span>
+        <button class="accent-btn" type="button" data-accent="red" aria-pressed="true">A — RED</button>
+        <button class="accent-btn" type="button" data-accent="lime" aria-pressed="false">B — LIME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+      <nav class="site-nav" id="siteNav" aria-label="Nawigacja główna">
+        <a href="index.html" class="is-active">Start</a>
+        <a href="motocykle.html">Motocykle</a>
+        <a href="atv.html">ATV</a>
+        <a href="ssv.html">SSV</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="index.html#cennik">Cennik</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="site-header__phone" href="tel:+48532000000">+48 532 000 000</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero" id="start">
+      <div class="container hero__grid">
+        <div class = "hero__content">
+          <p class="eyebrow">// Import &middot; Sprzedaż &middot; Serwis</p>
+          <h1 class="display hero__title">
+            Moc prosto
+            <span class="accent-text">Z fabryki</span>
+          </h1>
+          <p class="hero__lead">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quady, motocykle
+            i pojazdy SSV dla firm oraz klientów indywidualnych. Sed do eiusmod tempor
+            incididunt ut labore.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--accent" href="atv.html"><span>Zobacz ATV</span></a>
+            <a class="btn" href="#cennik"><span>Cennik</span></a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">500+</div>
+              <div class="stat__label">Sprzedanych maszyn</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">24 MSC</div>
+              <div class="stat__label">Gwarancji</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">48 H</div>
+              <div class="stat__label">Reakcja serwisu</div>
+            </div>
+          </div>
+        </div>
+        <div class="ph ph--cam hero__media">
+          <span class="ph__label">[ Zdjęcie: Quad — Hero ]</span>
+          <span class="ph__tag">CAM-01 // LIVE</span>
+        </div>
+      </div>
+      <div class="hero__watermark" aria-hidden="true">Arena</div>
+    </section>
+
+    <!-- ====== TICKER ====== -->
+    <div class="ticker-wrap" aria-hidden="true">
+      <div class="ticker">
+        <div class="ticker__track">
+          <div class="ticker__seq">
+            <span>ATV Arena</span><i>◆</i><span>Quady</span><i>◆</i><span>Motocykle</span><i>◆</i><span>SSV</span><i>◆</i><span>Serwis</span><i>◆</i><span>Części</span><i>◆</i><span>Finansowanie</span><i>◆</i>
+          </div>
+          <div class="ticker__seq">
+            <span>ATV Arena</span><i>◆</i><span>Quady</span><i>◆</i><span>Motocykle</span><i>◆</i><span>SSV</span><i>◆</i><span>Serwis</span><i>◆</i><span>Części</span><i>◆</i><span>Finansowanie</span><i>◆</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== KATEGORIE ====== -->
+    <section class="section" id="oferta">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// 01 — Oferta</p>
+          <h2 class="display">Wybierz swoją kategorię</h2>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-card reveal" href="motocykle.html">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Motocykl cross ]</span></div>
+            <div class="cat-card__body">
+              <span class="cat-card__num">/01</span>
+              <span class="cat-card__arrow" aria-hidden="true">⟶</span>
+              <h3 class="display cat-card__title">Motocykle</h3>
+              <p class="cat-card__desc">Cross, enduro, pit bike</p>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="atv.html">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Quad ATV ]</span></div>
+            <div class="cat-card__body">
+              <span class="cat-card__num">/02</span>
+              <span class="cat-card__arrow" aria-hidden="true">⟶</span>
+              <h3 class="display cat-card__title">ATV</h3>
+              <p class="cat-card__desc">Quady 110–450 ccm</p>
+            </div>
+          </a>
+          <a class="cat-card reveal" href="ssv.html">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Pojazd SSV ]</span></div>
+            <div class="cat-card__body">
+              <span class="cat-card__num">/03</span>
+              <span class="cat-card__arrow" aria-hidden="true">⟶</span>
+              <h3 class="display cat-card__title">SSV / UTV</h3>
+              <p class="cat-card__desc">Side-by-side, robocze</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== O FIRMIE ====== -->
+    <section class="section section--alt" id="o-firmie">
+      <div class="container about-grid">
+        <div class="about__text reveal">
+          <p class="eyebrow">// 02 — O firmie</p>
+          <h2 class="display section-head" style="margin-bottom: 1.25rem; font-size: clamp(1.9rem, 5vw, 3rem);">
+            Maszyny, które<br><span class="accent-text">znamy od środka</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+          </p>
+          <ul class="benefits">
+            <li class="benefit">Własny serwis i magazyn części</li>
+            <li class="benefit">Import bezpośredni z fabryk</li>
+            <li class="benefit">Faktura VAT / leasing dla firm</li>
+            <li class="benefit">Rejestracja i homologacja</li>
+          </ul>
+        </div>
+        <div class="about__media reveal">
+          <div class="ph"><span class="ph__label">[ Zdjęcie: Warsztat / Showroom ]</span></div>
+          <div class="about-boxes">
+            <div class="about-box">
+              <h3>Dla firm</h3>
+              <p>Lorem ipsum — floty, leasing, oferty hurtowe, serwis B2B.</p>
+            </div>
+            <div class="about-box">
+              <h3>Dla Ciebie</h3>
+              <p>Lorem ipsum — raty 0%, jazdy testowe, dostawa pod dom.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CENNIK ====== -->
+    <section class="section" id="cennik">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <p class="eyebrow">// 03 — Cennik</p>
+            <h2 class="display">Cennik maszyn</h2>
+          </div>
+          <span class="mono">Ceny brutto &middot; dane przykładowe (demo)</span>
+        </div>
+        <div class="price-table-wrap reveal">
+          <table class="price-table">
+            <thead>
+              <tr>
+                <th scope="col">Model</th>
+                <th scope="col" class="hide-sm">Kategoria</th>
+                <th scope="col">Silnik</th>
+                <th scope="col">Moc</th>
+                <th scope="col" class="hide-sm">Gwarancja</th>
+                <th scope="col">Cena</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="t-model">AA Kids 110</td>
+                <td class="t-cat hide-sm">ATV</td>
+                <td class="t-mono">107 ccm</td>
+                <td class="t-mono">7 KM</td>
+                <td class="t-mono hide-sm">12 msc</td>
+                <td class="t-price">4 290 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Pit 140</td>
+                <td class="t-cat hide-sm">MOTOCYKL</td>
+                <td class="t-mono">140 ccm</td>
+                <td class="t-mono">14 KM</td>
+                <td class="t-mono hide-sm">12 msc</td>
+                <td class="t-price">6 490 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Hunter 200</td>
+                <td class="t-cat hide-sm">ATV</td>
+                <td class="t-mono">200 ccm</td>
+                <td class="t-mono">13 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">8 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Storm 250</td>
+                <td class="t-cat hide-sm">ATV</td>
+                <td class="t-mono">250 ccm</td>
+                <td class="t-mono">17 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">10 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA MX 250</td>
+                <td class="t-cat hide-sm">MOTOCYKL</td>
+                <td class="t-mono">249 ccm</td>
+                <td class="t-mono">28 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">12 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Enduro 300</td>
+                <td class="t-cat hide-sm">MOTOCYKL</td>
+                <td class="t-mono">292 ccm</td>
+                <td class="t-mono">25 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">14 500 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Terrain 450</td>
+                <td class="t-cat hide-sm">ATV</td>
+                <td class="t-mono">450 ccm</td>
+                <td class="t-mono">27 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">18 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA SM 450</td>
+                <td class="t-cat hide-sm">MOTOCYKL</td>
+                <td class="t-mono">449 ccm</td>
+                <td class="t-mono">38 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">19 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA UTV 550 4x4</td>
+                <td class="t-cat hide-sm">SSV</td>
+                <td class="t-mono">546 ccm</td>
+                <td class="t-mono">38 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">42 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Worker 700</td>
+                <td class="t-cat hide-sm">SSV</td>
+                <td class="t-mono">686 ccm</td>
+                <td class="t-mono">45 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">54 900 PLN</td>
+              </tr>
+              <tr>
+                <td class="t-model">AA Side 800</td>
+                <td class="t-cat hide-sm">SSV</td>
+                <td class="t-mono">800 ccm</td>
+                <td class="t-mono">62 KM</td>
+                <td class="t-mono hide-sm">24 msc</td>
+                <td class="t-price">69 900 PLN</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mono price-note">* Dane techniczne i ceny mają charakter poglądowy — wersja demonstracyjna.</p>
+      </div>
+    </section>
+
+    <!-- ====== KONTAKT ====== -->
+    <section class="section section--alt" id="kontakt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">// 04 — Kontakt</p>
+          <h2 class="display">Znajdź nas</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="reveal">
+            <div class="contact-card">
+              <div class="contact-block">
+                <span class="mono">Adres</span>
+                <p>ATV Arena Sp. z o.o.<br>ul. Przemysłowa 14<br>41-300 Dąbrowa Górnicza</p>
+              </div>
+              <div class="contact-block">
+                <span class="mono">Telefon / E-mail</span>
+                <p>
+                  <a class="accent-text" href="tel:+48532000000">+48 532 000 000</a><br>
+                  <a class="accent-text" href="/cdn-cgi/l/email-protection#05676c70776a45647173286477606b642b7569"><span class="__cf_email__" data-cfemail="14767d61667b54756062397566717a753a6478">[email&#160;protected]</span></a>
+                </p>
+              </div>
+              <div class="contact-block">
+                <span class="mono">Godziny otwarcia</span>
+                <p>pon–pt: 9:00–17:00<br>sobota: 9:00–13:00</p>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <a href="#" aria-label="YouTube">YouTube</a>
+              <a href="#" aria-label="TikTok">TikTok</a>
+            </div>
+          </div>
+          <div class="ph ph--cam contact-map reveal">
+            <span class="ph__label">[ Mapa Google — osadzenie ]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== STOPKA ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+          <p class="site-footer__blurb">
+            Lorem ipsum dolor sit amet — sprzedaż, serwis i finansowanie quadów,
+            motocykli i pojazdów SSV.
+          </p>
+        </div>
+        <nav aria-label="Stopka">
+          <a href="index.html">Start</a>
+          <a href="motocykle.html">Motocykle</a>
+          <a href="atv.html">ATV</a>
+          <a href="ssv.html">SSV</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="index.html#cennik">Cennik</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom mono">
+        <span>© 2026 ATV Arena — wersja demonstracyjna</span>
+        <span>Projekt: Demo // v1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="support.js"></script>
+</body>
+</html>

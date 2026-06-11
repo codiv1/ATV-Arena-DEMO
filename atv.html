@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATV / Quady — ATV Arena | Demo</title>
+  <meta name="description" content="Quady ATV 110–450 ccm — oferta ATV Arena. Wersja demonstracyjna.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,700;1,700;1,800;1,900&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====== PASEK DEMO + ACCENT SWITCHER ====== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="mono topbar__note">Wersja demonstracyjna // atv-arena.pl // v1.0</span>
+      <div class="topbar__accents">
+        <span class="mono">Akcent:</span>
+        <button class="accent-btn" type="button" data-accent="red" aria-pressed="true">A — RED</button>
+        <button class="accent-btn" type="button" data-accent="lime" aria-pressed="false">B — LIME</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HEADER ====== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+      <nav class="site-nav" id="siteNav" aria-label="Nawigacja główna">
+        <a href="index.html">Start</a>
+        <a href="motocykle.html">Motocykle</a>
+        <a href="atv.html" class="is-active">ATV</a>
+        <a href="ssv.html">SSV</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="index.html#cennik">Cennik</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <a class="site-header__phone" href="tel:+48532000000">+48 532 000 000</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ====== NAGŁÓWEK STRONY ====== -->
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">// Oferta — 02</p>
+        <h1 class="display">ATV / Quady</h1>
+        <p class="page-head__lead">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Od maszyn dla
+          najmłodszych po quady terenowe 450 ccm — rekreacja, teren i praca.
+        </p>
+        <div class="page-head__meta">
+          <div class="stat">
+            <div class="stat__num">4</div>
+            <div class="stat__label">Modele w ofercie</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">110–450</div>
+            <div class="stat__label">ccm</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">24 MSC</div>
+            <div class="stat__label">Gwarancji</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__watermark" aria-hidden="true">Quad</div>
+    </section>
+
+    <!-- ====== MODELE ====== -->
+    <section class="section">
+      <div class="container">
+        <div class="model-grid model-grid--4">
+
+          <article class="model-card reveal">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Quad dziecięcy ]</span></div>
+            <div class="model-card__body">
+              <span class="model-card__id">AA-A01 // KIDS</span>
+              <h2 class="display model-card__name">AA Kids 110</h2>
+              <ul class="spec-list">
+                <li><span class="mono">Silnik</span><b>107 ccm / 4T</b></li>
+                <li><span class="mono">Moc</span><b>7 KM</b></li>
+                <li><span class="mono">Gwarancja</span><b>12 msc</b></li>
+              </ul>
+              <div class="model-card__foot">
+                <span class="model-card__price">4 290 PLN</span>
+                <a class="model-card__cta" href="index.html#kontakt">Zapytaj</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Quad 200 ]</span></div>
+            <div class="model-card__body">
+              <span class="model-card__id">AA-A02 // REKREACJA</span>
+              <h2 class="display model-card__name">AA Hunter 200</h2>
+              <ul class="spec-list">
+                <li><span class="mono">Silnik</span><b>200 ccm / 4T</b></li>
+                <li><span class="mono">Moc</span><b>13 KM</b></li>
+                <li><span class="mono">Gwarancja</span><b>24 msc</b></li>
+              </ul>
+              <div class="model-card__foot">
+                <span class="model-card__price">8 900 PLN</span>
+                <a class="model-card__cta" href="index.html#kontakt">Zapytaj</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Quad 250 ]</span></div>
+            <div class="model-card__body">
+              <span class="model-card__id">AA-A03 // SPORT</span>
+              <h2 class="display model-card__name">AA Storm 250</h2>
+              <ul class="spec-list">
+                <li><span class="mono">Silnik</span><b>250 ccm / 4T</b></li>
+                <li><span class="mono">Moc</span><b>17 KM</b></li>
+                <li><span class="mono">Gwarancja</span><b>24 msc</b></li>
+              </ul>
+              <div class="model-card__foot">
+                <span class="model-card__price">10 900 PLN</span>
+                <a class="model-card__cta" href="index.html#kontakt">Zapytaj</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="ph"><span class="ph__label">[ Zdjęcie: Quad 450 teren ]</span></div>
+            <div class="model-card__body">
+              <span class="model-card__id">AA-A04 // TEREN</span>
+              <h2 class="display model-card__name">AA Terrain 450</h2>
+              <ul class="spec-list">
+                <li><span class="mono">Silnik</span><b>450 ccm / 4T</b></li>
+                <li><span class="mono">Moc</span><b>27 KM</b></li>
+                <li><span class="mono">Gwarancja</span><b>24 msc</b></li>
+              </ul>
+              <div class="model-card__foot">
+                <span class="model-card__price">18 900 PLN</span>
+                <a class="model-card__cta" href="index.html#kontakt">Zapytaj</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pozostałe kategorie -->
+        <div class="cross-links">
+          <a class="cross-link reveal" href="motocykle.html">
+            <span><span class="mono">/01 &nbsp;</span> Motocykle — cross, enduro, pit</span>
+            <i aria-hidden="true">⟶</i>
+          </a>
+          <a class="cross-link reveal" href="ssv.html">
+            <span><span class="mono">/03 &nbsp;</span> SSV / UTV — Side-by-side</span>
+            <i aria-hidden="true">⟶</i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== STOPKA ====== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="logo" href="index.html">ATV <span class="logo__badge"><span>ARENA</span></span></a>
+          <p class="site-footer__blurb">
+            Lorem ipsum dolor sit amet — sprzedaż, serwis i finansowanie quadów,
+            motocykli i pojazdów SSV.
+          </p>
+        </div>
+        <nav aria-label="Stopka">
+          <a href="index.html">Start</a>
+          <a href="motocykle.html">Motocykle</a>
+          <a href="atv.html">ATV</a>
+          <a href="ssv.html">SSV</a>
+          <a href="galeria.html">Galeria</a>
+          <a href="index.html#cennik">Cennik</a>
+          <a href="index.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom mono">
+        <span>© 2026 ATV Arena — wersja demonstracyjna</span>
+        <span>Projekt: Demo // v1.0</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="support.js"></script>
+</body>
+</html>
